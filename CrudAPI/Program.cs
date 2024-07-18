@@ -1,4 +1,16 @@
+using CrudApi.Dados.Context;
+using Microsoft.Build.Framework;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Options;
+
 var builder = WebApplication.CreateBuilder(args);
+
+string connString = builder.Configuration.GetConnectionString("AzureDatabase");
+
+builder.Services.AddDbContext<ContextDB>(options =>
+{
+    options.UseSqlServer(connString);
+});
 
 // Add services to the container.
 

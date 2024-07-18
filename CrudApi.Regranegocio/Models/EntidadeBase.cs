@@ -1,13 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.ComponentModel.DataAnnotations;
 
 namespace CrudApi.Regranegocio.Models
 {
-    public class EntidadeBase
+    public abstract class EntidadeBase
     {
+        [Key]
         public int Id { get; set; }
     }
 }
