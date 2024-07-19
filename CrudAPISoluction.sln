@@ -5,9 +5,9 @@ VisualStudioVersion = 17.10.35004.147
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CrudAPI.App", "CrudAPI\CrudAPI.App.csproj", "{4FB4375C-6F67-4053-9274-343A62B9E039}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CrudApi.Regranegocio", "CrudApi.Regranegocio\CrudApi.Regranegocio.csproj", "{A77ED108-4A86-48C6-8992-6A0F86A6D146}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CrudApi.RegraNegocio", "CrudApi.Regranegocio\CrudApi.RegraNegocio.csproj", "{A77ED108-4A86-48C6-8992-6A0F86A6D146}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CrudApi.Dados", "CrudApi.Dados\CrudApi.Dados.csproj", "{00C575E1-91AA-46C9-907C-EC2D6C4F1386}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CrudApi.Dados", "CrudApi.Dados\CrudApi.Dados.csproj", "{00C575E1-91AA-46C9-907C-EC2D6C4F1386}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
