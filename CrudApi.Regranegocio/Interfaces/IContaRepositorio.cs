@@ -9,6 +9,6 @@ namespace CrudApi.RegraNegocio.Interfaces
 {
     public interface IContaRepositorio: IRepositorio<Conta>
     {
-
+        Conta ObterContaPorId(int id);
     }
 }

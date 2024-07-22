@@ -1,4 +1,6 @@
 using CrudApi.Dados.Context;
+using CrudApi.Dados.Repositorio;
+using CrudApi.RegraNegocio.Interfaces;
 using Microsoft.Build.Framework;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Options;
@@ -11,6 +13,16 @@ builder.Services.AddDbContext<ContextDB>(options =>
 {
     options.UseSqlServer(connString);
 });
+
+builder.Services.AddControllers();
+builder.Services.AddEndpointsApiExplorer();
+builder.Services.AddSwaggerGen();
+
+//Injeção de Dependências
+builder.Services.AddScoped<ContextDB>();
+builder.Services.AddScoped<IContaRepositorio, ContaRepositorio>();
+builder.Services.AddScoped<IMovimentoContaRepositorio, MovimentoContaRepositorio>();
+builder.Services.AddScoped<IPagamentoContaRepositorio, PagamentoContaRepositorio>();
 
 // Add services to the container.
 

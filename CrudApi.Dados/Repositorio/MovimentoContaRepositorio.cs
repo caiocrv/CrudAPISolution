@@ -4,9 +4,9 @@ using CrudApi.RegraNegocio.Interfaces;
 
 namespace CrudApi.Dados.Repositorio
 {
-    public class ContaRepositorio : Repositorio<Conta>, IContaRepositorio
+    public class MovimentoContaRepositorio : Repositorio<MovimentoConta>, IMovimentoContaRepositorio
     {
-        public ContaRepositorio(ContextDB db) : base(db)
+        public MovimentoContaRepositorio(ContextDB db) : base(db)
         {
 
         }
