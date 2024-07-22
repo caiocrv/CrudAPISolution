@@ -30,9 +30,9 @@ namespace CrudApi.Dados.Repositorio
             await SaveChanges();
         }
 
-        public Task<IEnumerable<TEntidadeBase>> Buscar(Expression<Func<TEntidadeBase, bool>> predicate)
+        public async Task<IEnumerable<TEntidadeBase>> Buscar(Expression<Func<TEntidadeBase, bool>> predicate)
         {
-            throw new NotImplementedException();
+            return await DbSet.AsNoTracking().Where(predicate).ToListAsync();
         }
 
         public void Dispose()
