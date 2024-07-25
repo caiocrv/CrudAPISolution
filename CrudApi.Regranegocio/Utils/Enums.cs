@@ -4,14 +4,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CrudApi.Regranegocio.Utils
+namespace CrudAPI.RegraNegocio.Utils
 {
     public class Enums
     {
-        public enum EnTipoContas
+        public enum EnTipoConta
         {
-            Fixa,
-            Variavel,
+            Fixa, 
+            Variavel, 
             Parcelada
         }
 
@@ -20,5 +20,6 @@ namespace CrudApi.Regranegocio.Utils
             Entrada,
             Saida
         }
+
     }
 }

@@ -1,8 +1,8 @@
-﻿using CrudApi.Regranegocio.Models;
+﻿using CrudAPI.RegraNegocio.Models;
 
-namespace CrudApi.RegraNegocio.Interfaces
+namespace CrudAPI.RegraNegocio.Interfaces
 {
-    public interface IPagamentoContaRepositorio : IRepositorio<PagamentoConta>;
-
+    public interface IPagamentoContaRepositorio: IRepositorio<PagamentoConta>
+    {
+    }
 }
-

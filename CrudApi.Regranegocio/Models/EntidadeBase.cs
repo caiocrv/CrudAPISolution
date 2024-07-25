@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace CrudApi.Regranegocio.Models
+namespace CrudAPI.RegraNegocio.Models
 {
     public abstract class EntidadeBase
     {

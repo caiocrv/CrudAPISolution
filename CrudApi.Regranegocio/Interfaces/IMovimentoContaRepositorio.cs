@@ -1,14 +1,8 @@
-﻿using CrudApi.Regranegocio.Models;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using CrudAPI.RegraNegocio.Models;
 
-namespace CrudApi.RegraNegocio.Interfaces
+namespace CrudAPI.RegraNegocio.Interfaces
 {
     public interface IMovimentoContaRepositorio: IRepositorio<MovimentoConta>
     {
-
     }
 }

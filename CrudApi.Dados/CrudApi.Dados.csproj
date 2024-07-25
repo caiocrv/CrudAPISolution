@@ -21,7 +21,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\CrudApi.Regranegocio\CrudApi.RegraNegocio.csproj" />
+    <ProjectReference Include="..\CrudAPI.RegraNegocio\CrudAPI.RegraNegocio.csproj" />
   </ItemGroup>
 
 </Project>

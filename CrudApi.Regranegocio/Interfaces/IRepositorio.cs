@@ -1,4 +1,4 @@
-﻿using CrudApi.Regranegocio.Models;
+﻿using CrudAPI.RegraNegocio.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -6,7 +6,7 @@ using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CrudApi.RegraNegocio.Interfaces
+namespace CrudAPI.RegraNegocio.Interfaces
 {
     public interface IRepositorio<TEntidadeBase> : IDisposable where TEntidadeBase : EntidadeBase
     {

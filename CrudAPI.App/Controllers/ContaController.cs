@@ -1,4 +1,5 @@
-﻿using CrudApi.RegraNegocio.Interfaces;
+﻿using CrudAPI.RegraNegocio.Interfaces;
+using CrudAPI.RegraNegocio.Models;
 using Microsoft.AspNetCore.Mvc;
 
 namespace CrudAPI.App.Controllers
@@ -13,6 +14,14 @@ namespace CrudAPI.App.Controllers
         }
 
         [HttpGet("obter-todas")]
-        public async Tesk
+        public async Task<ActionResult<IEnumerable<Conta>>> ObterTodas()
+        {
+            var contas = await _IContaRepositorio.ObterTodos();
+            return Ok(contas);
+        }
+
+
+
+
     }
 }
