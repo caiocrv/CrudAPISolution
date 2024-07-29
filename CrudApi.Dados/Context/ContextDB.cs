@@ -20,7 +20,7 @@ namespace CrudAPI.Dados.Context
         public DbSet<Conta> Contas { get; set; }
         public DbSet<MovimentoConta> MovimentoContas { get; set; }
         public DbSet<PagamentoConta> PagamentoContas { get; set; }
-
+        public DbSet<ContaBancaria> ContaBancarias { get; set; }
 
     }
 }

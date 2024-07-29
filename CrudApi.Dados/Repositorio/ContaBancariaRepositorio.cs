@@ -5,13 +5,14 @@ using Microsoft.EntityFrameworkCore;
 
 namespace CrudAPI.Dados.Repositorio
 {
-    public class PagamentoContaRepositorio : Repositorio<PagamentoConta>, IPagamentoContaRepositorio
+    public class ContaBancariaRepositorio : Repositorio<ContaBancaria>, IContaBancariaRepositorio
     {
-        public PagamentoContaRepositorio(ContextDB db) : base(db)
+        public ContaBancariaRepositorio(ContextDB db) : base(db)
         {
+
         }
 
-        public async Task<PagamentoConta> ObterPorId(int id)
+        public async Task<ContaBancaria> ObterPorId(int id)
         {
             return await DbSet.AsNoTracking().FirstOrDefaultAsync(c => c.Id == id);
         }

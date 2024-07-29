@@ -1,11 +1,7 @@
 ﻿using CrudAPI.Dados.Context;
 using CrudAPI.RegraNegocio.Interfaces;
 using CrudAPI.RegraNegocio.Models;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using Microsoft.EntityFrameworkCore;
 
 namespace CrudAPI.Dados.Repositorio
 {
@@ -14,5 +10,10 @@ namespace CrudAPI.Dados.Repositorio
         public ContaRepositorio(ContextDB db) : base(db)
         {
         }
+        public async Task<Conta> ObterPorId(int id)
+        {
+            return await DbSet.AsNoTracking().FirstOrDefaultAsync(c => c.Id == id);
+        }
+        
     }
 }
