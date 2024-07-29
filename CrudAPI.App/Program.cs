@@ -25,6 +25,7 @@ builder.Services.AddScoped<ContextDB>();
 builder.Services.AddScoped<IContaRepositorio, ContaRepositorio>();
 builder.Services.AddScoped<IMovimentoContaRepositorio, MovimentoContaRepositorio>();
 builder.Services.AddScoped<IPagamentoContaRepositorio, PagamentoContaRepositorio>();
+builder.Services.AddScoped<IContaBancariaRepositorio, ContaBancariaRepositorio>();
 
 var app = builder.Build();
 
