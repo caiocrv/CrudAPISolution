@@ -20,7 +20,7 @@ namespace CrudAPI.App.Controllers
             return Ok(contaBancaria);
         }
 
-        [HttpPost("incluir-movimento-conta")]
+        [HttpPost("incluir-conta-bancaria")]
         public async Task<ActionResult<ContaBancaria>> Adicionar(ContaBancaria contaBancaria)
         {
             try
@@ -34,7 +34,7 @@ namespace CrudAPI.App.Controllers
                 return BadRequest(ex.Message);
             }
         }
-        [HttpPut("alterar-movimento-conta")]
+        [HttpPut("alterar-conta-bancaria")]
         public async Task<ActionResult<ContaBancaria>> Atualizar([FromQuery] int id, [FromBody] ContaBancaria contaBancaria)
         {
             try
@@ -58,7 +58,7 @@ namespace CrudAPI.App.Controllers
             }
         }
 
-        [HttpDelete("excluir-movimento-conta")]
+        [HttpDelete("excluir-conta-bancaria")]
         public async Task<ActionResult> Deletar(int id)
         {
             try

@@ -27,7 +27,7 @@ namespace CrudAPI.App.Controllers
             {
                 await _IPagamentoContaRepositorio.Adicionar(pagamentoConta);
                 return Ok(pagamentoConta);
-
+                
             }
             catch (Exception ex)
             {
